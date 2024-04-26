@@ -103,9 +103,9 @@ void traverse(){
             currentNode = currentNode->next;
         }
     }
-
-    void searchData(){
-        if(listEmpty()){
+}
+    void searchData() {
+        if(listEmpty()) {
             cout << "List Kosong" << endl;
             system("pause");
             system("cls");
@@ -175,9 +175,18 @@ int main(){
                 case 4:
                 searchData();
                 break;
+                case 5:
+                break;
+                default:
+                cout<< "Plihan tidak ada" << endl;
+                break;
             }
         }
-    }
+        catch(exception e)
+        {
+            cout << "Terjadi Kesalahan" << endl;
+        }
+    }while (pilihan !=5);
 }
 
 
