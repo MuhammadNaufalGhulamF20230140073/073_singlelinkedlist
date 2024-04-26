@@ -169,7 +169,9 @@ int main(){
                 else
                     cout << "Data tidak di temukan" << endl;
                     break;
-              
+                case 3:
+                traverse();
+                break;
             }
         }
     }
